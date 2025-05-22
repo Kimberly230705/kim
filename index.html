@@ -3,55 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kinverli Masiel Rodríguez Escarza</title>
+  <title>Kinverli Rodríguez Escarza</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f3e5f5;
-      color: #4a148c;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f5f0fa;
+      color: #333;
     }
 
-    .container {
+    header {
+      background-color: #6a0dad;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #a15be3;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #6a0dad;
+    }
+
+    section {
+      padding: 40px 20px;
       max-width: 800px;
-      margin: 40px auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
+      margin: auto;
     }
 
-    h1, h2 {
-      color: #6a1b9a;
-      border-bottom: 2px solid #ba68c8;
-      padding-bottom: 5px;
+    h2 {
+      color: #6a0dad;
     }
 
     ul {
-      list-style-type: disc;
-      margin-left: 20px;
+      padding-left: 20px;
     }
 
-    a {
-      color: #8e24aa;
-      text-decoration: none;
+    footer {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 10px;
     }
 
-    a:hover {
+    .link {
+      color: #6a0dad;
       text-decoration: underline;
-    }
-
-    p {
-      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Kinverli Masiel Rodríguez Escarza</h1>
-    <p>Tengo 19 años, estudio la carrera de Ingeniería Industrial y voy en mi 3er año.</p>
 
+  <header>
+    <h1>Kinverli Masiel Rodríguez Escarza</h1>
+    <p>Estudiante de Ingeniería Industrial</p>
+  </header>
+
+  <nav>
+    <a href="#bio">Biografía</a>
+    <a href="#aptitudes">Aptitudes</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#profesores">Profesores</a>
+    <a href="#companeras">Compañeras</a>
+  </nav>
+
+  <section id="bio">
+    <h2>Biografía</h2>
+    <p>Mi nombre es Kinverli Masiel Rodríguez Escarza, tengo 19 años. Estudio la carrera de Ingeniería Industrial y actualmente voy en mi 3er año.</p>
+  </section>
+
+  <section id="aptitudes">
     <h2>Aptitudes</h2>
     <ul>
       <li>Empática</li>
@@ -59,7 +92,9 @@
       <li>Proactiva</li>
       <li>Carismática</li>
     </ul>
+  </section>
 
+  <section id="cursos">
     <h2>Cursos que estoy llevando</h2>
     <ul>
       <li>Cálculo I</li>
@@ -69,15 +104,28 @@
       <li>Matemática II</li>
       <li>Amar o defender</li>
     </ul>
+  </section>
 
+  <section id="profesores">
     <h2>Profesor</h2>
-    <p><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros Vargas</a></p>
+    <p>
+      <a class="link" href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">
+        Ernesto Cuadros Vargas (LinkedIn)
+      </a>
+    </p>
+  </section>
 
+  <section id="companeras">
     <h2>Compañeras de clase</h2>
     <ul>
       <li>Cristell Zuleyka Ranilla Vilca</li>
       <li>Joselyn Gardenia Canchumani Tito</li>
     </ul>
-  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kinverli Rodríguez Escarza</p>
+  </footer>
+
 </body>
 </html>
